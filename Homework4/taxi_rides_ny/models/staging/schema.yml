@@ -12,6 +12,9 @@ sources:
            # error_after: {count: 6, period: hour}
 
 models:
+    - name: stg_fhv_trips
+      description: "Staging model for FHV trips in 2019, filtering out null dispatching_base_num."
+
     - name: stg_green_tripdata
       description: >
         Trip made by green taxis, also known as boro taxis and street-hail liveries.

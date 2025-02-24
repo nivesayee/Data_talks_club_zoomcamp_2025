@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="783f18d3-3fa7-4618-94b6-4cbee58da72c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/question5.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question6.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question7.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi_rides_ny/models/core/dim_fhv_trips.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi_rides_ny/models/core/fct_fhv_monthly_zone_traveltime_p90.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi_rides_ny/models/core/fct_taxi_trips_monthly_fare_p95.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/taxi_rides_ny/models/staging/stg_fhv_trips.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxi_rides_ny/models/core/fct_taxi_trips_quarterly_revenue.sql" beforeDir="false" afterPath="$PROJECT_DIR$/taxi_rides_ny/models/core/fct_taxi_trips_quarterly_revenue.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxi_rides_ny/models/core/schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/taxi_rides_ny/models/core/schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxi_rides_ny/models/staging/schema.yml" beforeDir="false" afterPath="$PROJECT_DIR$/taxi_rides_ny/models/staging/schema.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxi_rides_ny/models/staging/stg_green_tripdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/taxi_rides_ny/models/staging/stg_green_tripdata.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taxi_rides_ny/models/staging/stg_yellow_tripdata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/taxi_rides_ny/models/staging/stg_yellow_tripdata.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2tV5Nin7hY0ofSAcflOofHPskBZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maayo/github_projects/Data_talks_club_zoomcamp_2025/Homework4/taxi_rides_ny/models&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maayo\github_projects\Data_talks_club_zoomcamp_2025\Homework4\taxi_rides_ny\models" />
+      <recent name="C:\Users\maayo\github_projects\Data_talks_club_zoomcamp_2025\Homework4" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="783f18d3-3fa7-4618-94b6-4cbee58da72c" name="Changes" comment="" />
+      <created>1740424362440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740424362440</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

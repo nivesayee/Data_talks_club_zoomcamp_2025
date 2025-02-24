@@ -6,7 +6,7 @@ WITH quarterly_revenue AS (
         EXTRACT(QUARTER FROM pickup_datetime) AS quarter,
         CONCAT(EXTRACT(YEAR FROM pickup_datetime), '/Q', EXTRACT(QUARTER FROM pickup_datetime)) AS year_quarter,
         SUM(total_amount) AS quarterly_revenue
-    FROM {{ ref('fct_trips') }}
+    FROM {{ ref('fact_trips') }}
     GROUP BY 1, 2, 3, 4, 5
 ),
 

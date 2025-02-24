@@ -127,3 +127,95 @@ models:
       - name: payment_type_description
         data_type: string
         description: ""
+
+  - name: fact_taxi_trips_quarterly_revenue
+    description: >
+      Aggregated table of taxi trips computing quarterly revenues and Year-over-Year (YoY) revenue growth.
+      This model helps analyze quarterly revenue trends and compare them with previous years.
+    columns:
+      - name: year
+        data_type: int64
+        description: "Year of the trip pickup"
+
+      - name: quarter
+        data_type: int64
+        description: "Quarter of the year (1-4) based on pickup_datetime"
+
+      - name: year_quarter
+        data_type: string
+        description: "Year and quarter formatted as 'YYYY/QX' (e.g., 2020/Q1, 2020/Q2)"
+
+      - name: taxi_type
+        data_type: string
+        description: "Type of taxi service (Green or Yellow)"
+
+      - name: quarterly_revenue
+        data_type: numeric
+        description: "Total revenue for that taxi type in the given quarter"
+
+      - name: previous_year_revenue
+        data_type: numeric
+        description: "Revenue from the same quarter in the previous year for YoY comparison"
+
+      - name: YoY_growth_percentage
+        data_type: numeric
+        description: "Year-over-Year growth percentage compared to the same quarter in the previous year"
+
+  - name: fct_taxi_trips_monthly_fare_p95
+    description: >
+      Aggregated monthly percentiles (P97, P95, P90) of fare_amount for each taxi service type.
+      Filters out invalid trips where fare_amount <= 0, trip_distance <= 0, and only includes payments made by Cash or Credit Card.
+    columns:
+      - name: service_type
+        data_type: string
+        description: "Type of taxi service (Green or Yellow)."
+
+      - name: year
+        data_type: int64
+        description: "Year of the trip pickup."
+
+      - name: month
+        data_type: int64
+        description: "Month of the trip pickup."
+
+      - name: p97_fare_amount
+        data_type: numeric
+        description: "97th percentile of fare_amount for the given taxi service type, year, and month."
+
+      - name: p95_fare_amount
+        data_type: numeric
+        description: "95th percentile of fare_amount for the given taxi service type, year, and month."
+
+      - name: p90_fare_amount
+        data_type: numeric
+        description: "90th percentile of fare_amount for the given taxi service type, year, and month."
+
+  - name: dim_fhv_trips
+    description: "Core model for FHV trips, enriched with zone names and date-based dimensions."
+    columns:
+      - name: pickup_location_id
+        description: "Location ID of trip pickup."
+      - name: dropoff_location_id
+        description: "Location ID of trip dropoff."
+      - name: year
+        description: "Year of trip."
+      - name: month
+        description: "Month of trip."
+      - name: pickup_zone
+        description: "Name of the pickup zone."
+      - name: dropoff_zone
+        description: "Name of the dropoff zone."
+
+  - name: fct_fhv_monthly_zone_traveltime_p90
+    description: "Fact table computing the P90 travel time for FHV trips per pickup and dropoff location."
+    columns:
+      - name: pickup_location_id
+        description: "Pickup location ID."
+      - name: dropoff_location_id
+        description: "Dropoff location ID."
+      - name: year
+        description: "Year of the trip."
+      - name: month
+        description: "Month of the trip."
+      - name: p90_trip_duration
+        description: "90th percentile of trip duration (seconds) for given pickup/dropoff location and month."
